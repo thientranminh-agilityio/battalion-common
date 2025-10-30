@@ -1,0 +1,42 @@
+{
+  "name": "@battalion/common",
+  "version": "1.0.0",
+  "description": "Shared utilities and types for Battalion Metals Medusa project",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "battalion",
+    "metals",
+    "pricing",
+    "medusa",
+    "ecommerce"
+  ],
+  "author": "Battalion Metals",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thientranminh-agilityio/battalion-common.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
