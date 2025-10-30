@@ -1,4 +1,4 @@
-# @battalion/common
+# @thientranminh-agilityio/battalion-common
 
 Shared utilities and types for Battalion Metals Medusa project.
 
@@ -6,8 +6,16 @@ This package contains shared logic used across both the Medusa backend and the s
 
 ## Installation
 
+### From GitHub Packages
+
+First, configure npm to use GitHub Packages for this scope:
+
 ```bash
-npm install @battalion/common
+# Add to your .npmrc file (one time setup)
+echo "@thientranminh-agilityio:registry=https://npm.pkg.github.com" >> ~/.npmrc
+
+# Then install normally
+npm install @thientranminh-agilityio/battalion-common
 ```
 
 ## Quick Start

@@ -1,5 +1,5 @@
 {
-  "name": "@battalion/common",
+  "name": "@thientranminh-agilityio/battalion-common",
   "version": "1.0.0",
   "description": "Shared utilities and types for Battalion Metals Medusa project",
   "main": "dist/index.js",
@@ -37,6 +37,7 @@
     "url": "git+https://github.com/thientranminh-agilityio/battalion-common.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   }
 }
