@@ -32,6 +32,9 @@ logs
 coverage/
 *.lcov
 
+# Jest
+.jest/
+
 # nyc test coverage
 .nyc_output
 
