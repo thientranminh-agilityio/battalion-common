@@ -18,6 +18,21 @@ echo "@thientranminh-agilityio:registry=https://npm.pkg.github.com" >> ~/.npmrc
 npm install @thientranminh-agilityio/battalion-common
 ```
 
+### TypeScript Projects
+
+For TypeScript projects, ensure your `tsconfig.json` uses modern module resolution:
+
+```json
+{
+  "compilerOptions": {
+    "moduleResolution": "node16", // or "nodenext" or "bundler"
+    "module": "Node16" // or "NodeNext" or "ESNext"
+  }
+}
+```
+
+See [TYPESCRIPT.md](./TYPESCRIPT.md) for detailed TypeScript usage guide.
+
 ## Quick Start
 
 ```typescript

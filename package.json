@@ -1,6 +1,6 @@
 {
   "name": "@thientranminh-agilityio/battalion-common",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Shared utilities and types for Battalion Metals Medusa project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     },
     "./constants": {
       "types": "./dist/constants/index.d.ts",
-      "import": "./dist/constants/index.js", 
+      "import": "./dist/constants/index.js",
       "require": "./dist/constants/index.js"
     },
     "./types": {
@@ -31,13 +31,13 @@
       "require": "./dist/utils/*.js"
     },
     "./constants/*": {
-      "types": "./dist/constants/*.d.ts", 
+      "types": "./dist/constants/*.d.ts",
       "import": "./dist/constants/*.js",
       "require": "./dist/constants/*.js"
     },
     "./types/*": {
       "types": "./dist/types/*.d.ts",
-      "import": "./dist/types/*.js", 
+      "import": "./dist/types/*.js",
       "require": "./dist/types/*.js"
     }
   },
