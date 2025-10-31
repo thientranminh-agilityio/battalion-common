@@ -13,12 +13,12 @@ If you're having issues importing from `@thientranminh-agilityio/battalion-commo
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     // or alternatively:
-    // "module": "Node16", 
+    // "module": "Node16",
     // "moduleResolution": "node16",
     // or for bundlers:
     // "module": "ESNext",
     // "moduleResolution": "bundler",
-    
+
     "declaration": true,
     "outDir": "./dist",
     "rootDir": "./src",
@@ -36,23 +36,29 @@ If you're having issues importing from `@thientranminh-agilityio/battalion-commo
 
 ```typescript
 // ✅ Main imports
-import { calculatePricesWithMarkupDiscount, ONE_MILLION_IN_CENTS } from '@thientranminh-agilityio/battalion-common';
-import type { CalculatePricesWithMarkupDiscountInput, CalculatedPricesWithMarkupDiscount } from '@thientranminh-agilityio/battalion-common';
+import {
+  calculatePricesWithMarkupDiscount,
+  ONE_MILLION_IN_CENTS,
+} from "@thientranminh-agilityio/battalion-common";
+import type {
+  CalculatePricesWithMarkupDiscountInput,
+  CalculatedPricesWithMarkupDiscount,
+} from "@thientranminh-agilityio/battalion-common";
 
-// ✅ Folder-level imports  
-import { calculatePricesWithMarkupDiscount } from '@thientranminh-agilityio/battalion-common/utils';
-import { ONE_MILLION_IN_CENTS } from '@thientranminh-agilityio/battalion-common/constants';
+// ✅ Folder-level imports
+import { calculatePricesWithMarkupDiscount } from "@thientranminh-agilityio/battalion-common/utils";
+import { ONE_MILLION_IN_CENTS } from "@thientranminh-agilityio/battalion-common/constants";
 
 // ✅ File-level imports
-import { calculatePricesWithMarkupDiscount } from '@thientranminh-agilityio/battalion-common/utils/pricing';
-import { ONE_MILLION_IN_CENTS } from '@thientranminh-agilityio/battalion-common/constants/pricing';
+import { calculatePricesWithMarkupDiscount } from "@thientranminh-agilityio/battalion-common/utils/pricing";
+import { ONE_MILLION_IN_CENTS } from "@thientranminh-agilityio/battalion-common/constants/pricing";
 ```
 
 ### Usage with Types
 
 ```typescript
-import { calculatePricesWithMarkupDiscount } from '@thientranminh-agilityio/battalion-common';
-import type { CalculatePricesWithMarkupDiscountInput } from '@thientranminh-agilityio/battalion-common';
+import { calculatePricesWithMarkupDiscount } from "@thientranminh-agilityio/battalion-common";
+import type { CalculatePricesWithMarkupDiscountInput } from "@thientranminh-agilityio/battalion-common";
 
 const input: CalculatePricesWithMarkupDiscountInput = {
   promoMarkupDiscount: 10,
@@ -60,7 +66,7 @@ const input: CalculatePricesWithMarkupDiscountInput = {
   wholesaleMarkup: 0.95,
   markupByTier: 1.1,
   actualMetalWeight: 1.0,
-  maximumPremiumDiscount: 50
+  maximumPremiumDiscount: 50,
 };
 
 const result = calculatePricesWithMarkupDiscount(input);
@@ -81,6 +87,6 @@ If you must use older TypeScript/Node resolution (`"moduleResolution": "node"`),
 
 ```typescript
 // Fallback for older TypeScript projects
-import { calculatePricesWithMarkupDiscount } from '@thientranminh-agilityio/battalion-common/dist/utils/pricing';
-import { ONE_MILLION_IN_CENTS } from '@thientranminh-agilityio/battalion-common/dist/constants/pricing';
+import { calculatePricesWithMarkupDiscount } from "@thientranminh-agilityio/battalion-common/dist/utils/pricing";
+import { ONE_MILLION_IN_CENTS } from "@thientranminh-agilityio/battalion-common/dist/constants/pricing";
 ```
